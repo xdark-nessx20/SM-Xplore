@@ -29,3 +29,15 @@ MinTic, DNDA.
 ## - Plataformas de Información Externa
 
 Páginas web, redes sociales.
+
+---
+
+# Usuarios
+
+---
+
+* ### Turista
+* ### Guía Turístico
+* ### Prestadores de servicios Turísticos
+* ### Entidades de Gestion de destinos Turísticos
+* ### Admin del sistema
