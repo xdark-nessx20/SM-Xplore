@@ -2,33 +2,33 @@
 
 ---
 
-## - Turistas
+* ### Turistas
 
-Nacionales e Internacionales.
+    Nacionales e Internacionales.
 
-## - Guías Turísticos
+* ### Guías Turísticos
 
-## - Ministerio de Comercio, Industria y Turismo.
+* ### Ministerio de Comercio, Industria y Turismo.
 
-## - Prestadores de servicios Turísticos
+* ### Prestadores de servicios Turísticos
+ 
+    Hoteles, Restaurantes, operadores turísticos, etc.
 
-Hoteles, Restaurantes, operadores turísticos, etc.
+* ### Ministerio de Ambiente y Desarrollo sostenible
 
-## - Ministerio de Ambiente y Desarrollo sostenible
+* ### Alcaldía de Santa Marta
 
-## - Alcaldía de Santa Marta
+* ### Entidades de Gestión de destinos turísticos
 
-## - Entidades de Gestión de destinos turísticos
+* ### Administrador del sistema
 
-## - Administrador del sistema
+* ### Autoridades de Proteccion de Datos
 
-## - Autoridades de Proteccion de Datos
+    MinTic, DNDA.
 
-MinTic, DNDA.
+* ### Plataformas de Información Externa
 
-## - Plataformas de Información Externa
-
-Páginas web, redes sociales.
+    Páginas web, redes sociales.
 
 ---
 
