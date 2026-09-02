@@ -17,12 +17,12 @@ turísticos, para que los turistas y guías siempre tengan información oficial 
 Como **Entidad Gestora de Destinos Turísticos**, quiero configurar horarios de disponibilidad para los
 atractivos turísticos, para que los turistas sepan cuando pueden visitarlo.
 
-### US4 - Ver destinos turísticos (Priority: P1)
+### US4 - Ver atractivos turísticos (Priority: P1)
 
 Como **Entidad Gestora de Destinos Turísticos**, quiero poder listar los atractivos turísticos, para ver
 cuáles están disponibles en el sistema.
 
-### US5 - Cambiar estado destino turístico (Priority: P2)
+### US5 - Cambiar estado de atractivo turístico (Priority: P2)
 
 Como **Entidad Gestora de Destinos Turísticos**, quiero cambiar el estado de los atractivos turísticos,
 para mantener a los turistas informados sobre su disponibilidad.
