@@ -74,3 +74,8 @@ para poder analizar y gestionar la distribución de turistas entre ellas.
 Como **Entidad Gestora de Destinos Turísticos**, quiero marcar una zona como congestionada, para que el
 sistema pueda recomendar otras opciones a los turistas para reducir la carga durante temporadas de alta
 demanda.
+
+### US15 - Asignar atractivo a zona turística (Priority: P1)
+
+Como **Entidad Gestora de Destinos Turísticos**, quiero asignar los atractivos a zonas turísticas de Santa Marta,
+para analizar la congestión de turistas por zonas.
