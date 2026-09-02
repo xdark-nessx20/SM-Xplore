@@ -59,9 +59,9 @@ decisiones de planificación turística.
 Como **Entidad Gestora de Destinos Turísticos**, quiero generar reportes con los indicadores de demanda de
 un periodo seleccionado, para usarlos como soporte de decisiones de planificación turística.
 
-### US12 - Ver Reseñas sobre atractivo (Priority: P1)
+### US12 - Ver Reseñas sobre atractivos y eventos (Priority: P1)
 
-Como **Entidad Gestora de Destinos Turísticos**, quiero ver las reseñas sobre los atractivos turísticos,
+Como **Entidad Gestora de Destinos Turísticos**, quiero ver las reseñas sobre los atractivos y eventos turísticos,
 para conocer las diversas opiniones de los turistas sobre estos.
 
 ### US13 - Configurar zonas turísticas (Priority: P1)
