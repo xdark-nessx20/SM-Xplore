@@ -89,3 +89,13 @@ en el sistema.
 
 Como **Entidad Gestora de Destinos Turísticos**, quiero poder buscar un atractivo específico, para ver su información de
 forma mas detallada y precisa.
+
+### US18 - Ver eventos turísticos (Priority: P1)
+
+Como **Entidad Gestora de Destinos Turísticos**, quiero ver un listado de los eventos, para ver cuales ya estan disponibles
+en el sistema.
+
+### US19 - Buscar evento turístico (Priority: P1)
+
+Como **Entidad Gestora de Destinos Turísticos**, quiero poder buscar un evento específico, para ver su información de
+forma mas detallada y precisa.
