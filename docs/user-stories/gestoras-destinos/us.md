@@ -79,3 +79,8 @@ demanda.
 
 Como **Entidad Gestora de Destinos Turísticos**, quiero asignar los atractivos a zonas turísticas de Santa Marta,
 para analizar la congestión de turistas por zonas.
+
+### US16 - Ver zonas turísticas (Priority: P1)
+
+Como **Entidad Gestora de Destinos Turísticos**, quiero ver un listado de las zonas, para ver cuales ya estan disponibles
+en el sistema.
