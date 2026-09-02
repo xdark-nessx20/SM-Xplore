@@ -84,3 +84,8 @@ para analizar la congestión de turistas por zonas.
 
 Como **Entidad Gestora de Destinos Turísticos**, quiero ver un listado de las zonas, para ver cuales ya estan disponibles
 en el sistema.
+
+### US17 - Buscar atractivo turístico (Priority: P1)
+
+Como **Entidad Gestora de Destinos Turísticos**, quiero poder buscar un atractivo específico, para ver su información de
+forma mas detallada y precisa.
