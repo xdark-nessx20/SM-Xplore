@@ -99,3 +99,9 @@ en el sistema.
 
 Como **Entidad Gestora de Destinos Turísticos**, quiero poder buscar un evento específico, para ver su información de
 forma mas detallada y precisa.
+
+### US20 - Interactuar con reportes de seguridad
+
+Como **Entidad Gestora de Destinos Turísticos**, quiero poder consultar y responder a reportes que hagan los usuarios sobre
+incidentes en los sitios turisticos (robos, desastres naturales, etc.), para monitorear cualquier tipo de problema que comprometa
+la integridad de las personas y tomar medidas necesarias a tiempo.
