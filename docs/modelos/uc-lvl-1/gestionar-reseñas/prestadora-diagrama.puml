@@ -1,0 +1,17 @@
+@startuml
+
+left to right direction
+
+actor PrestadorasServicios as P
+
+rectangle "Gestionar Reseñas (UC8)" {
+    usecase "Ver reseñas del servicio" as UC8_1
+    usecase "Responder reseñas" as UC8_2
+    usecase "Ver metricas de reputacion" as UC8_3
+}
+
+P -- UC8_1
+P -- UC8_2
+P -- UC8_3
+
+@enduml
