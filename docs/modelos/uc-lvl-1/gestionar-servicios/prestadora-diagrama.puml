@@ -30,4 +30,11 @@ P -- UC3_9
 P -- UC3_10
 P -- UC3_11
 
+UC3_1 ..> UC3_3 : <<include>>
+UC3_1 ..> UC3_4 : <<include>>
+UC3_1 ..> UC3_5 : <<include>>
+UC3_1 ..> UC3_8 : <<include>>
+UC3_9 ..> UC3_3 : <<extend>>
+UC3_7 ..> UC3_2 : <<extend>>
+
 @enduml

@@ -22,4 +22,7 @@ P -- UC7_5
 P -- UC7_6
 P -- UC7_7
 
+UC7_5 ..> UC7_4 : <<extend>>
+UC7_7 ..> UC7_4 : <<extend>>
+
 @enduml

@@ -16,4 +16,6 @@ P -- UC11_2
 P -- UC11_3
 P -- UC11_4
 
+UC11_3 ..> UC11_2 : <<extend>>
+
 @enduml

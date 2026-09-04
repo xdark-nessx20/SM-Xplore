@@ -14,4 +14,6 @@ P -- UC8_1
 P -- UC8_2
 P -- UC8_3
 
+UC8_2 ..> UC8_1 : <<extend>>
+
 @enduml
