@@ -1,0 +1,23 @@
+@startuml
+
+left to right direction
+
+actor GestorasDestinos as G
+
+package GestionarEventosTuristicos {
+    usecase "Registrar evento turístico" as UC1
+    usecase "Cambiar estado evento turístico" as UC2
+    usecase "Estimar afluencia esperada evento" as UC3
+    usecase "Listar eventos" as UC4
+    usecase "Buscar evento" as UC5
+}
+
+G -- UC1
+G -- UC2
+G -- UC3
+G -- UC4
+G -- UC5
+
+UC2 ..> UC5 : <<include>>
+
+@enduml

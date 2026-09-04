@@ -1,0 +1,36 @@
+@startuml
+
+left to right direction
+
+actor GestorasDestinos as G
+
+package GestionarAtractivosTuristicos {
+    usecase "Registrar atractivos turísticos" as UC1
+    usecase "Actualizar atractivos turísticos" as UC2
+    usecase "Establecer horario de disponibilidad" as UC3
+    usecase "Ver atractivos turísticos" as UC4
+    usecase "Cambiar estado atractivo turístico" as UC5
+    usecase "Definir capacidad atractivos turísticos" as UC6
+    usecase "Asignar atractivo a zona" as UC7
+    usecase "Buscar atractivo" as UC8
+}
+
+G -- UC1
+G -- UC2
+G -- UC3
+G -- UC4
+G -- UC5
+G -- UC6
+G -- UC7
+G -- UC8
+
+UC2 ..> UC8 : <<include>>
+UC3 ..> UC8 : <<include>>
+UC5 ..> UC8 : <<include>>
+UC6 ..> UC8 : <<include>>
+UC7 ..> UC8 : <<include>>
+
+UC1 <.. UC6 : <<extends>>
+UC2 <.. UC6 : <<extends>>
+
+@enduml

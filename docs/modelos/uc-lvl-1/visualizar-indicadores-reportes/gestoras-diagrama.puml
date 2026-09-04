@@ -1,0 +1,15 @@
+@startuml
+
+left to right direction
+
+actor GestorasDestinos as G
+
+package Ver-Indicadores-Reportes {
+    usecase "Ver indicadores comportamiento demanda" as UC1
+    usecase "Generar reportes para planificación" as UC2
+}
+
+G -- UC1
+G -- UC2
+
+@enduml

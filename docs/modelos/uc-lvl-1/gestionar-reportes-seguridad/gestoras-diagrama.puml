@@ -1,0 +1,17 @@
+@startuml
+
+left to right direction
+
+actor GestorasDestinos as G
+
+package GestionarReportesSeguridad {
+    usecase "Ver reportes de seguridad" as UC1
+    usecase "Responder reportes de seguridad" as UC2
+
+}
+
+G -- UC1
+G -- UC2
+
+
+@enduml
