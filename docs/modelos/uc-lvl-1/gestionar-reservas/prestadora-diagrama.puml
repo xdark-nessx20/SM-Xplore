@@ -4,7 +4,7 @@ left to right direction
 
 actor PrestadorasServicios as P
 
-rectangle "Gestionar Reservas (UC7)" {
+package "Gestionar Reservas (UC7)" {
     usecase "Ver reservas recibidas" as UC7_1
     usecase "Recibir notificacion de nueva reserva" as UC7_2
     usecase "Recibir alerta de baja disponibilidad" as UC7_3
@@ -22,7 +22,7 @@ P -- UC7_5
 P -- UC7_6
 P -- UC7_7
 
-UC7_5 ..> UC7_4 : <<extend>>
-UC7_7 ..> UC7_4 : <<extend>>
+UC7_4 <.. UC7_5 : <<extend>>
+UC7_4 <.. UC7_7 : <<extend>>
 
 @enduml

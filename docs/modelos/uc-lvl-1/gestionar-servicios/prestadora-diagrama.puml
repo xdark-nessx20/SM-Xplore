@@ -4,7 +4,7 @@ left to right direction
 
 actor PrestadorasServicios as P
 
-rectangle "Gestionar Servicios (UC3)" {
+package "Gestionar Servicios (UC3)" {
     usecase "Registrar servicio turistico" as UC3_1
     usecase "Actualizar informacion del servicio" as UC3_2
     usecase "Definir precios del servicio" as UC3_3
@@ -34,7 +34,7 @@ UC3_1 ..> UC3_3 : <<include>>
 UC3_1 ..> UC3_4 : <<include>>
 UC3_1 ..> UC3_5 : <<include>>
 UC3_1 ..> UC3_8 : <<include>>
-UC3_9 ..> UC3_3 : <<extend>>
-UC3_7 ..> UC3_2 : <<extend>>
+UC3_3 <.. UC3_9 : <<extend>>
+UC3_2 <.. UC3_7 : <<extend>>
 
 @enduml
