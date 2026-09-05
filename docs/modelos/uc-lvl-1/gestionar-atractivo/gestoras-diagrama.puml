@@ -13,6 +13,7 @@ package GestionarAtractivosTuristicos {
     usecase "Definir capacidad atractivos turísticos" as UC6
     usecase "Asignar atractivo a zona" as UC7
     usecase "Buscar atractivo" as UC8
+    usecase "Ver ubicación en mapa" as UC9
 }
 
 G -- UC1
@@ -32,5 +33,7 @@ UC7 ..> UC8 : <<include>>
 
 UC1 <.. UC6 : <<extends>>
 UC2 <.. UC6 : <<extends>>
+UC4 <.. UC9 : <<extends>>
+UC8 <.. UC9 : <<extends>>
 
 @enduml
