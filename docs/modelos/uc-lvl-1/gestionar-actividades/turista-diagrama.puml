@@ -1,0 +1,22 @@
+@startuml
+left to right direction
+
+actor Turista as T
+
+package "UC5 - Gestionar Actividades" {
+    usecase "Consultar actividades disponibles" as UC1
+    usecase "Filtrar actividades por categoría" as UC2
+    usecase "Filtrar actividades por atractivo" as UC3
+    usecase "Ver detalles de actividad" as UC4
+}
+
+T -- UC1
+T -- UC2
+T -- UC3
+T -- UC4
+
+UC1 ..> UC4 : <<include>>
+UC2 ..> UC1 : <<include>>
+UC3 ..> UC1 : <<include>>
+
+@enduml
