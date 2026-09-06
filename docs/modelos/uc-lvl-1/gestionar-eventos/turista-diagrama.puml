@@ -3,7 +3,7 @@ left to right direction
 
 actor Turista as T
 
-package "UC6 - Gestionar Eventos Turísticos" {
+package "Gestionar Eventos Turísticos" {
     usecase "Consultar eventos disponibles" as UC1
     usecase "Buscar evento específico" as UC2
     usecase "Recibir info eventos planificados" as UC3

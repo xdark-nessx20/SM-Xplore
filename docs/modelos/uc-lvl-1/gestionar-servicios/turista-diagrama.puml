@@ -3,7 +3,7 @@ left to right direction
 
 actor Turista as T
 
-package "UC3 - Gestionar Servicios" {
+package "Gestionar Servicios" {
     usecase "Explorar servicios por zona" as UC1
     usecase "Explorar servicios por categoría" as UC2
     usecase "Ver detalles de servicio" as UC3

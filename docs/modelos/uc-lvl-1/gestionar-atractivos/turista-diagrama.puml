@@ -3,7 +3,7 @@ left to right direction
 
 actor Turista as T
 
-package "UC4 - Gestionar Atractivos" {
+package "Gestionar Atractivos" {
     usecase "Buscar sitio y ver detalles" as UC1
     usecase "Recomendar lugares cercanos" as UC2
     usecase "Consultar disponibilidad\nde sitio" as UC3

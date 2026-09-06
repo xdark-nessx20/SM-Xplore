@@ -3,7 +3,7 @@ left to right direction
 
 actor Turista as T
 
-package "UC11 - Gestionar Reportes de Seguridad" {
+package "Gestionar Reportes de Seguridad" {
     usecase "Reportar incidente de seguridad" as UC1
     usecase "Reportar avistamiento de policía" as UC2
     usecase "Recibir alertas de seguridad" as UC3

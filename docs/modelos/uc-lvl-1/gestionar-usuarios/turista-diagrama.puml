@@ -3,7 +3,7 @@ left to right direction
 
 actor Turista as T
 
-package "UC1 - Gestionar Usuarios" {
+package "Gestionar Usuarios" {
     usecase "Registrar cuenta de turista" as UC1
     usecase "Modificar perfil de turista" as UC2
     usecase "Ver perfil propio" as UC3

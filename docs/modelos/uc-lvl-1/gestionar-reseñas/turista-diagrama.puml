@@ -3,7 +3,7 @@ left to right direction
 
 actor Turista as T
 
-package "UC8 - Gestionar Reseñas" {
+package "Gestionar Reseñas" {
     usecase "Crear reseña y puntuación" as UC1
     usecase "Leer reseñas y puntuaciones" as UC2
     usecase "Reseñar atractivo turístico" as UC3

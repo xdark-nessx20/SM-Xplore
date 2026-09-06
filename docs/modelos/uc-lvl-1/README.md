@@ -8,7 +8,7 @@ Los modelos han sido divididos por actor para una mejor legibilidad.
 
 * ### [Guía Turístico](gestionar-usuarios/guia-turistico-diagrama.puml)
 * ### [Admin](gestionar-usuarios/admin-diagrama.puml)
-* [Turista]()
+* ### [Turista](gestionar-usuarios/turista-diagrama.puml)
 
 ---
 
@@ -21,7 +21,7 @@ Los modelos han sido divididos por actor para una mejor legibilidad.
 ## Gestionar Servicios
 
 * ### [Prestadoras de Servicios](gestionar-servicios/prestadora-diagrama.puml)
-* [Turista]()
+* ### [Turista](gestionar-servicios/turista-diagrama.puml)
 
 --- 
 
@@ -29,27 +29,27 @@ Los modelos han sido divididos por actor para una mejor legibilidad.
 
 * ### [Gestoras de Destinos Turísticos](gestionar-atractivos/gestoras-diagrama.puml)
 * ### [Guía Turístico](gestionar-atractivos/guia-turistico-diagrama.puml)
-* [Turista]()
+* ### [Turista](gestionar-atractivos/turista-diagrama.puml)
 
 ---
 
 ## Gestionar Actividades Turísticas
 
 * ### [Guía Turístico](gestionar-actividades/guia-turistico-diagrama.puml)
-* [Turista]()
+* ### [Turista](gestionar-actividades/turista-diagrama.puml)
 
 ---
 
 ## Gestionar Eventos Turísticos
 
 * ### [Gestoras de Destinos Turísticos](gestionar-eventos/gestoras-diagrama.puml)
-* [Turista]()
+* ### [Turista](gestionar-eventos/turista-diagrama.puml)
 
 ---
 
 ## Gestionar Reservas
 
-* [Turista]()
+* ### [Turista](gestionar-reservas/turista-diagrama.puml)
 * ### [Prestadoras de Servicios](gestionar-reservas/prestadora-diagrama.puml)
 * ### [Guía Turístico](gestionar-reservas/guia-turistico-diagrama.puml)
 
@@ -60,7 +60,7 @@ Los modelos han sido divididos por actor para una mejor legibilidad.
 * ### [Prestadoras de Servicios](gestionar-reseñas/prestadora-diagrama.puml)
 * ### [Guía Turístico](gestionar-reseñas/guia-turistico-diagrama.puml)
 * ### [Gestoras de Destinos Turísticos](gestionar-reseñas/gestoras-diagrama.puml)
-* [Turista]()
+* ### [Turista](gestionar-reseñas/turista-diagrama.puml)
 
 ---
 
@@ -83,6 +83,6 @@ Los modelos han sido divididos por actor para una mejor legibilidad.
 * ### [Prestadoras de Servicios](gestionar-reportes-de-seguridad/prestadora-diagrama.puml)
 * ### [Guía Turístico](gestionar-reportes-de-seguridad/guia-turistico-diagrama.puml)
 * ### [Admin](gestionar-reportes-de-seguridad/admin-diagrama.puml)
-* [Turista]()
+* ### [Turista](gestionar-reportes-de-seguridad/turista-diagrama.puml)
 
 ---
