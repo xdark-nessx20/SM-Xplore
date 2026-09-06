@@ -8,7 +8,7 @@ Las historias de usuario estarán divididas por usuario:
 
 * ### [Guía Turístico](guia-turistico/us.md)
 
-* ### [Prestadoras de Servicio](prestadoras-servicios/us.md)
+* ### [Prestadoras de Servicio](prestadoras-de-servicios/us.md)
 
 * ### [Entidades de Gestión de Destinos Turísticos](gestoras-destinos/us.md)
 
