@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+
+actor Turista as T
+
+package "UC3 - Gestionar Servicios" {
+    usecase "Explorar servicios por zona" as UC1
+    usecase "Explorar servicios por categoría" as UC2
+    usecase "Ver detalles de servicio" as UC3
+}
+
+T -- UC1
+T -- UC2
+T -- UC3
+
+UC1 ..> UC3 : <<include>>
+UC2 ..> UC3 : <<include>>
+
+@enduml
