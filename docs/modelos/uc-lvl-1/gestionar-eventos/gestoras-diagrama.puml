@@ -10,6 +10,7 @@ package GestionarEventosTuristicos {
     usecase "Estimar afluencia esperada evento" as UC3
     usecase "Listar eventos" as UC4
     usecase "Buscar evento" as UC5
+    usecase "Validar existencia del evento" as UC6
 }
 
 G -- UC1
@@ -18,6 +19,7 @@ G -- UC3
 G -- UC4
 G -- UC5
 
-UC2 ..> UC5 : <<include>>
+UC2 ..> UC6 : <<include>>
+UC5 ..> UC6 : <<include>>
 
 @enduml
