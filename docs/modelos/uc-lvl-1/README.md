@@ -12,9 +12,7 @@ Los modelos han sido divididos por actor para una mejor legibilidad.
 
 ---
 
-## Gestionar Destino Turístico
-
-* ### [Gestoras de Destinos Turísticos](gestionar-destino/gestoras-diagrama.puml)
+## [Gestionar Destino Turístico](gestionar-destino/diagrama.puml)
 
 ---
 
