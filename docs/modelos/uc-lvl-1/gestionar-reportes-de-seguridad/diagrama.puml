@@ -1,0 +1,59 @@
+@startuml
+left to right direction
+
+actor Admin as ADM_Actor
+actor GestorasDestinos as GES_Actor
+actor "Guía Turístico" as GUI_Actor
+actor PrestadorasServicios as PRE_Actor
+actor Turista as TUR_Actor
+
+package "Gestionar Reportes de Seguridad" {
+    usecase "Publicar reporte de seguridad" as UC_publicar
+    usecase "Consultar alertas de seguridad" as PRE_UC_consultar_alertas
+    usecase "Recibir alertas de seguridad" as UC_alertas
+    usecase "Recibir alertas geolocalizadas" as PRE_UC_alertas_geo
+    usecase "Ver mapa de incidentes de seguridad" as PRE_UC_mapa
+    usecase "Consultar reportes de seguridad" as UC_consultar_reportes
+    usecase "Ver detalle del reporte" as GUI_UC_detalle
+    usecase "Buscar reportes" as GUI_UC_buscar
+    usecase "Responder reportes de seguridad" as GES_UC_responder
+    usecase "Ordenar reportes por fecha" as GES_UC_ordenar
+    usecase "Comentar reporte" as GUI_UC_comentar
+    usecase "Reaccionar a reporte" as GUI_UC_reaccionar
+    usecase "Reportar contenido inapropiado" as GUI_UC_inapropiado
+    usecase "Reportar avistamiento de policía" as TUR_UC_policia
+    usecase "Registrar reporte de seguridad" as ADM_UC_registrar
+    usecase "Dar seguimiento y cerrar reporte de seguridad" as ADM_UC_seguimiento
+    usecase "Notificar a autoridades competentes" as ADM_UC_notificar
+    usecase "Validar datos obligatorios" as ADM_UC_validar
+}
+
+GUI_Actor -- UC_publicar
+GUI_Actor -- UC_consultar_reportes
+GUI_Actor -- GUI_UC_buscar
+PRE_Actor -- UC_publicar
+PRE_Actor -- PRE_UC_consultar_alertas
+PRE_Actor -- UC_alertas
+PRE_Actor -- PRE_UC_alertas_geo
+PRE_Actor -- PRE_UC_mapa
+GES_Actor -- UC_consultar_reportes
+GES_Actor -- GES_UC_responder
+TUR_Actor -- UC_publicar
+TUR_Actor -- UC_alertas
+TUR_Actor -- TUR_UC_policia
+ADM_Actor -- ADM_UC_registrar
+ADM_Actor -- ADM_UC_seguimiento
+
+ADM_UC_registrar ..> ADM_UC_validar : <<include>>
+UC_alertas <.. PRE_UC_alertas_geo : <<extend>>
+PRE_UC_consultar_alertas <.. PRE_UC_mapa : <<extend>>
+UC_consultar_reportes <.. GES_UC_ordenar : <<extend>>
+UC_consultar_reportes <.. GUI_UC_detalle : <<extend>>
+UC_consultar_reportes <.. GUI_UC_buscar : <<extend>>
+GUI_UC_detalle <.. GUI_UC_comentar : <<extend>>
+GUI_UC_detalle <.. GUI_UC_reaccionar : <<extend>>
+GUI_UC_detalle <.. GUI_UC_inapropiado : <<extend>>
+UC_publicar <.. TUR_UC_policia : <<extend>>
+ADM_UC_seguimiento <.. ADM_UC_notificar : <<extend>>
+
+@enduml

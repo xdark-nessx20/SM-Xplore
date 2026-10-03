@@ -1,0 +1,34 @@
+@startuml
+left to right direction
+
+actor Admin as ADM_Actor
+actor GestorasDestinos as GES_Actor
+actor PrestadorasServicios as PRE_Actor
+
+package "Visualizar Indicadores y Reportes" {
+    usecase "Ver indicadores globales de la plataforma" as ADM_UC_indicadores
+    usecase "Generar reportes de auditoría" as ADM_UC_auditoria
+    usecase "Monitorear disponibilidad del sistema en tiempo real" as ADM_UC_monitoreo
+    usecase "Generar alerta de indisponibilidad" as ADM_UC_alerta
+    usecase "Validar datos obligatorios" as ADM_UC_validar
+    usecase "Iniciar sesión" as ADM_UC_login
+    usecase "Consultar indicadores de demanda" as UC_demanda
+    usecase "Generar reportes para planificación" as GES_UC_reportes
+    usecase "Exportar reportes como PDF" as GES_UC_exportar
+    usecase "Generar reportes del negocio" as PRE_UC_reportes
+}
+
+ADM_Actor -- ADM_UC_indicadores
+ADM_Actor -- ADM_UC_auditoria
+ADM_Actor -- ADM_UC_monitoreo
+GES_Actor -- UC_demanda
+GES_Actor -- GES_UC_reportes
+PRE_Actor -- UC_demanda
+PRE_Actor -- PRE_UC_reportes
+
+ADM_UC_auditoria ..> ADM_UC_validar : <<include>>
+ADM_UC_auditoria ..> ADM_UC_login : <<include>>
+ADM_UC_monitoreo <.. ADM_UC_alerta : <<extend>>
+GES_UC_reportes <.. GES_UC_exportar : <<extend>>
+
+@enduml

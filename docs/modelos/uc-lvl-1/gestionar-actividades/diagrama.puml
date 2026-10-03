@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+
+actor "Guía Turístico" as GUI_Actor
+actor Turista as TUR_Actor
+
+package "Gestionar Actividades Turísticas" {
+    usecase "Registrar actividad turística" as GUI_UC_registrar
+    usecase "Consultar actividades" as UC_consultar
+    usecase "Actualizar actividad turística" as GUI_UC_actualizar
+    usecase "Gestionar disponibilidad" as GUI_UC_disponibilidad
+    usecase "Gestionar cupos" as GUI_UC_cupos
+    usecase "Cancelar actividad turística" as GUI_UC_cancelar
+    usecase "Filtrar actividades por categoría" as TUR_UC_categoria
+    usecase "Filtrar actividades por atractivo" as TUR_UC_atractivo
+    usecase "Ver detalles de actividad" as TUR_UC_detalles
+}
+
+GUI_Actor -- GUI_UC_registrar
+GUI_Actor -- UC_consultar
+GUI_Actor -- GUI_UC_actualizar
+GUI_Actor -- GUI_UC_disponibilidad
+GUI_Actor -- GUI_UC_cupos
+TUR_Actor -- UC_consultar
+
+UC_consultar <.. TUR_UC_categoria : <<extend>>
+UC_consultar <.. TUR_UC_atractivo : <<extend>>
+UC_consultar <.. TUR_UC_detalles : <<extend>>
+GUI_UC_disponibilidad <.. GUI_UC_cancelar : <<extend>>
+
+@enduml

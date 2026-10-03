@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+
+actor GestorasDestinos as GES_Actor
+actor "Guía Turístico" as GUI_Actor
+actor PrestadorasServicios as PRE_Actor
+actor Turista as TUR_Actor
+
+package "Gestionar Reseñas" {
+    usecase "Consultar reseñas y valoraciones" as UC_consultar
+    usecase "Responder reseña" as UC_responder
+    usecase "Crear reseña\n(atractivo, actividad, evento, servicio o guía)" as TUR_UC_crear
+    usecase "Ver métricas de reputación" as PRE_UC_metricas
+    usecase "Reportar reseña" as GUI_UC_reportar
+}
+
+GES_Actor -- UC_consultar
+GES_Actor -- UC_responder
+GUI_Actor -- UC_consultar
+GUI_Actor -- UC_responder
+GUI_Actor -- GUI_UC_reportar
+PRE_Actor -- UC_consultar
+PRE_Actor -- UC_responder
+PRE_Actor -- PRE_UC_metricas
+TUR_Actor -- UC_consultar
+TUR_Actor -- TUR_UC_crear
+
+UC_consultar <.. UC_responder : <<extend>>
+UC_consultar <.. GUI_UC_reportar : <<extend>>
+
+@enduml

@@ -1,0 +1,35 @@
+@startuml
+left to right direction
+
+actor GestorasDestinos as GES_Actor
+actor Turista as TUR_Actor
+
+package "Gestionar Eventos Turísticos" {
+    usecase "Registrar evento turístico" as GES_UC_registrar
+    usecase "Cambiar estado del evento" as GES_UC_estado
+    usecase "Estimar afluencia esperada del evento" as GES_UC_afluencia
+    usecase "Listar eventos" as GES_UC_listar
+    usecase "Consultar eventos disponibles" as TUR_UC_consultar
+    usecase "Buscar evento" as UC_buscar
+    usecase "Recibir información de eventos planificados" as TUR_UC_planificados
+    usecase "Ver detalles del evento" as UC_detalles
+    usecase "Validar existencia del evento" as UC_validar
+}
+
+GES_Actor -- GES_UC_registrar
+GES_Actor -- GES_UC_estado
+GES_Actor -- GES_UC_afluencia
+GES_Actor -- GES_UC_listar
+GES_Actor -- UC_buscar
+TUR_Actor -- TUR_UC_consultar
+TUR_Actor -- UC_buscar
+TUR_Actor -- TUR_UC_planificados
+
+GES_UC_estado ..> UC_validar : <<include>>
+UC_buscar ..> UC_validar : <<include>>
+GES_UC_listar <.. UC_detalles : <<extend>>
+TUR_UC_consultar <.. UC_detalles : <<extend>>
+UC_buscar <.. UC_detalles : <<extend>>
+TUR_UC_planificados <.. UC_detalles : <<extend>>
+
+@enduml

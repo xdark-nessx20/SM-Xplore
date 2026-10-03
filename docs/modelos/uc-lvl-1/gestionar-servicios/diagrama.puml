@@ -1,0 +1,39 @@
+@startuml
+left to right direction
+
+actor PrestadorasServicios as PRE_Actor
+actor Turista as TUR_Actor
+
+package "Gestionar Servicios" {
+    usecase "Registrar servicio turístico" as PRE_UC_registrar
+    usecase "Actualizar información del servicio" as PRE_UC_actualizar
+    usecase "Definir precios del servicio" as PRE_UC_precios
+    usecase "Configurar horarios de disponibilidad" as PRE_UC_horarios
+    usecase "Establecer capacidad máxima de cupos" as PRE_UC_cupos
+    usecase "Cambiar estado del servicio" as PRE_UC_estado
+    usecase "Previsualizar perfil público" as PRE_UC_previsualizar
+    usecase "Registrar zona turística de operación" as PRE_UC_zona
+    usecase "Gestionar galería de fotos del servicio" as PRE_UC_galeria
+    usecase "Definir políticas de cancelación del negocio" as PRE_UC_cancelacion
+    usecase "Explorar servicios por zona" as TUR_UC_zona
+    usecase "Explorar servicios por categoría" as TUR_UC_categoria
+    usecase "Ver detalles del servicio" as TUR_UC_detalles
+}
+
+PRE_Actor -- PRE_UC_registrar
+PRE_Actor -- PRE_UC_actualizar
+PRE_Actor -- PRE_UC_estado
+PRE_Actor -- PRE_UC_galeria
+PRE_Actor -- PRE_UC_cancelacion
+TUR_Actor -- TUR_UC_zona
+TUR_Actor -- TUR_UC_categoria
+
+PRE_UC_registrar ..> PRE_UC_precios : <<include>>
+PRE_UC_registrar ..> PRE_UC_horarios : <<include>>
+PRE_UC_registrar ..> PRE_UC_cupos : <<include>>
+PRE_UC_registrar ..> PRE_UC_zona : <<include>>
+PRE_UC_actualizar <.. PRE_UC_previsualizar : <<extend>>
+TUR_UC_zona <.. TUR_UC_detalles : <<extend>>
+TUR_UC_categoria <.. TUR_UC_detalles : <<extend>>
+
+@enduml
